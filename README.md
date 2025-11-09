@@ -1,17 +1,29 @@
-# TNG MW Kinematics + Na I D / Ca II H&K
+# TNG-MW: Kinematic and Spectral Analysis Toolkit
 
-Two-panel diagnostic: left—TNG gas kinematics; right—synthetic absorption for Na I D and Ca II H&K along selected impact parameters.
+A minimal workflow for analyzing Milky-Way–type galaxies in the IllustrisTNG simulation.  
+Includes utilities for catalog inspection, filtering star-forming systems, and preparing data for synthetic spectra generation using `yt` and `trident`.
 
-## Layout
-- Data root: `/Users/wavefunction/ASU Dropbox/Tanmay Singh/TNG-MW/`
-- Repo: `/Users/wavefunction/github_repos/tng-mw-kinematics-spec/`
+## Quick Start
+```bash
+git clone https://github.com/<username>/tng-mw-kinematics-spec.git
+cd tng-mw-kinematics-spec
+uv venv --python 3.12
+source .venv/bin/activate
+uv pip install -e .
+```
 
-## Steps
-1. Create uv env; install deps.
-2. Run `scripts/quicklook_catalog.py` to inspect columns/metadata.
-3. Run `scripts/export_starforming_csv.py` for SFR/sSFR filters.
-4. Run `scripts/select_subhalo_432106.py` to extract MW-like target.
+### Run
+```bash
+python scripts/quick_look.py
+python scripts/export_starforming_csv.py
 
-## Next
-- Download minimal TNG subhalo/cutout for the selected system.
-- Build kinematic maps and synthetic spectra (yt+trident).
+```
+
+## Dependencies
+numpy, pandas, h5py, matplotlib, yt, trident, illustris_python, scida
+
+## Data Source
+IllustrisTNG Milky Way / Andromeda dataset: https://www.tng-project.org/data/milkyway+andromeda/
+
+## License
+MIT License © 2025 Tanmay Singh
