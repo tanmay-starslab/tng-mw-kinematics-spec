@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+.uv
+.pytype/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data
+*.hdf5
+*.h5
+*.fits
+*.parquet
+*.csv
+*.npz
+*.npy
+/outputs/
+/figures/
+/data/
+/Users/wavefunction/ASU Dropbox/
+
+# IDE
+.vscode/
+.idea/
