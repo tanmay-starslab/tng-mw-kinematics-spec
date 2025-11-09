@@ -37,3 +37,6 @@ build/
 
 # secrets
 .env
+
+# trident files
+notebooks/y/*

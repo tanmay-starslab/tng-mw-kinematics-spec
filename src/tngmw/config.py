@@ -30,3 +30,10 @@ HEADERS     = {"api-key": TNG_API_KEY}
 SIMULATION  = "TNG50-1"
 SNAPNUM     = 99
 SUBID       = 432106
+
+
+PLOTS = DATA_ROOT / "plots"
+
+for d in [RAW, PROCESSED, PLOTS]:
+    d.mkdir(parents=True, exist_ok=True)
+# --- End of config.py ---
